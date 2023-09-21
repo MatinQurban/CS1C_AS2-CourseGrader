@@ -20,9 +20,9 @@ Write a program to model courses with students and grades. Here are the requirem
 
 6. A student supports:
 
-a) Print the student details
+- a) Print the student details
 
-b)Returning the student's letter grade. You can find the student's total earned points and divide it by the number of total points allowed and then convert that percentage to a letter grade.
+- b)Returning the student's letter grade. You can find the student's total earned points and divide it by the number of total points allowed and then convert that percentage to a letter grade.
 
 7. Note you may need several other behaviors (functions). Create what you need and think about when the function should be public or private.
 
