@@ -34,5 +34,4 @@ private:
     int totalPointsPossible;
 };
 
-
-};
+#endif // STUDENT_H_
