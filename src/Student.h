@@ -24,12 +24,13 @@ public:
 
     void addAssignment(Assignment assignment);
     void printDetails();
+    void printGrades();
     char getLetterGrade();
 
 private:
     string name;
     int studentID;
-    vector<Assignment> assignments;
+    vector<int> assignmentGrades;
     int totalPointsEarned;
     int totalPointsPossible;
 };
