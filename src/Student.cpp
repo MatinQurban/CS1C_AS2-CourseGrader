@@ -16,8 +16,10 @@ Student::Student(string name, int studentID) {
     totalPointsPossible = 0;
 }
 
-void Student::addAssignmentGrade(int assignmentGrade) {
-    assignmentGrades.push_back(assignmentGrade);
+void Student::addSubmission(Submission submission) {
+    studentSubmissions.push_back(submission);
+    totalPointsEarned += submission.getPointsEarned();
+    totalPointsPossible += submission.getTotalPointsPossible();
 }
 
 void Student::printDetails() {

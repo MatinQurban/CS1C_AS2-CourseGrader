@@ -12,6 +12,7 @@ public:
     ~Submission();
 
     int getPointsEarned();
+    int getTotalPointsPossible();
 
     void setAssignment(Assignment assignment);
     void setPointsEarned(int pointsEarned);

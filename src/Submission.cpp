@@ -20,6 +20,10 @@ int Submission::getPointsEarned() {
     return pointsEarned;
 }
 
+int Submission::getTotalPointsPossible() {
+    return assignmentPtr->getTotalPointsPossible();
+}
+
 void Submission::setAssignment(Assignment assignment) {
     this->assignmentPtr = &assignment;
 }
