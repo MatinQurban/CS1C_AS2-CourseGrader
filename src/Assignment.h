@@ -6,6 +6,7 @@
 #define ASSIGNMENT_H_
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Assignment {
@@ -20,6 +21,8 @@ public:
     void setName(string name);
     void setDescription(string description);
     void setTotalPointsPossible(int totalPointsPossible);
+
+    void print();
 
 private:
     string name;

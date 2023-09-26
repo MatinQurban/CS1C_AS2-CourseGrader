@@ -22,7 +22,7 @@ public:
     Student();
     Student(string name, int studentID);
 
-    void addAssignment(Assignment assignment);
+    void addAssignmentGrade(int assignmentGrade);
     void printDetails();
     void printGrades();
     char getLetterGrade();
@@ -31,7 +31,6 @@ private:
     string name;
     int studentID;
     vector<int> assignmentGrades;
-    int totalPointsEarned;
     int totalPointsPossible;
 };
 
