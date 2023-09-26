@@ -31,7 +31,7 @@ public:
 private:
     string name;
     int studentID;
-    vector<int> assignmentGrades;
+    vector<Submission> studentSubmissions;
     int totalPointsPossible;
     int totalPointsEarned;
 };
