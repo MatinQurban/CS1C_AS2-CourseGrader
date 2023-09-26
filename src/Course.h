@@ -32,7 +32,12 @@ public:
     void printRoster();
     void printAssignments();
 
-
+private:
+    string instructor;
+    string CourseTitle;
+    string CourseDescription;
+    vector<Student> students;
+    vector<Assignment> assignments;
 
 };
 
