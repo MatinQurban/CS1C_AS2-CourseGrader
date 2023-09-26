@@ -52,3 +52,7 @@ char Student::getLetterGrade() {
         return 'F';
     }
 }
+
+string Student::getName() {
+    return name;
+}

@@ -26,6 +26,7 @@ public:
     void printDetails();
     void printGrades();
     char getLetterGrade();
+    string getName();
 
 private:
     string name;
