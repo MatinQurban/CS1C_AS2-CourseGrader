@@ -1,6 +1,6 @@
 // Implementation of Student class
 
-#include "student.h"
+#include "Student.h"
 
 Student::Student() {
     name = "";
