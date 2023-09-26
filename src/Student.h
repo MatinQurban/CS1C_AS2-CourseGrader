@@ -32,6 +32,7 @@ private:
     int studentID;
     vector<int> assignmentGrades;
     int totalPointsPossible;
+    int totalPointsEarned;
 };
 
 #endif // STUDENT_H_
