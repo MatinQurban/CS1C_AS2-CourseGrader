@@ -15,9 +15,9 @@ int main()
     Student student3("Luke Juedes", 13579);
 
     // Add students to course
-    course.addStudent(student1);
-    course.addStudent(student2);
-    course.addStudent(student3);
+    course.addStudent(&student1);
+    course.addStudent(&student2);
+    course.addStudent(&student3);
 
     // Create three assignments
     Assignment assignment1("Assignment 1", "Recipe book", 100);
@@ -25,22 +25,22 @@ int main()
     Assignment assignment3("Assignment 3", "Course Grader", 150);
 
     // Add assignments to course
-    course.addAssignment(assignment1);
-    course.addAssignment(assignment2);
-    course.addAssignment(assignment3);
+    course.addAssignment(&assignment1);
+    course.addAssignment(&assignment2);
+    course.addAssignment(&assignment3);
 
     // Creating submissions
-    Submission stud1Asmt1Submission(assignment1, 52);
-    Submission stud1Asmt2Submission(assignment2, 130);
-    Submission stud1Asmt3Submission(assignment3, 10);
+    Submission stud1Asmt1Submission(&assignment1, 52);
+    Submission stud1Asmt2Submission(&assignment2, 130);
+    Submission stud1Asmt3Submission(&assignment3, 10);
 
-    Submission stud2Asmt1Submission(assignment1, 100);
-    Submission stud2Asmt2Submission(assignment2, 150);
-    Submission stud2Asmt3Submission(assignment3, 150);
+    Submission stud2Asmt1Submission(&assignment1, 100);
+    Submission stud2Asmt2Submission(&assignment2, 150);
+    Submission stud2Asmt3Submission(&assignment3, 150);
 
-    Submission stud3Asmt1Submission(assignment1, 75);
-    Submission stud3Asmt2Submission(assignment2, 110);
-    Submission stud3Asmt3Submission(assignment3, 150);
+    Submission stud3Asmt1Submission(&assignment1, 75);
+    Submission stud3Asmt2Submission(&assignment2, 110);
+    Submission stud3Asmt3Submission(&assignment3, 150);
 
     // Add submissions to students
     student1.addSubmission(stud1Asmt1Submission);
@@ -57,6 +57,7 @@ int main()
 
     // Print course roster
     course.printRoster();
+    course.printAssignments();
 
     return 0;
 }

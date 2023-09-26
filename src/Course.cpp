@@ -14,11 +14,11 @@ Course::Course(string instructor, string CourseTitle, string CourseDescription) 
     this->CourseDescription = CourseDescription;
 }
 
-void Course::addStudent(Student student) {
+void Course::addStudent(Student* student) {
     students.push_back(student);
 }
 
-void Course::addAssignment(Assignment assignment) {
+void Course::addAssignment(Assignment* assignment) {
     assignments.push_back(assignment);
 }
 
@@ -28,8 +28,7 @@ void Course::printRoster() {
     cout << "Course Description: " << CourseDescription << endl;
     cout << "Student Roster: \n";
     for (int i = 0; i < students.size(); i++) {
-        cout << " ";
-        students[i].printDetails();
+        students[i]->printDetails();
     }
     cout << endl;
 }
@@ -37,7 +36,7 @@ void Course::printRoster() {
 void Course::printAssignments() {
     cout << "Assignments: \n";
     for (int i = 0; i < assignments.size(); i++) {
-        assignments[i].print();
+        assignments[i]->print();
     }
     cout << endl;
 }

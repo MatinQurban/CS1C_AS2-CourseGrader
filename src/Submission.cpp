@@ -7,12 +7,13 @@ Submission::Submission() {
     pointsEarned = 0;
 }
 
-Submission::Submission(Assignment assignment, int pointsEarned) {
-    this->assignmentPtr = &assignment;
-    this->pointsEarned = pointsEarned;
+Submission::Submission(Assignment *assignment, int pointsEarned) {
+    assignmentPtr = assignment;
+    setPointsEarned(pointsEarned);
 }
 
 Submission::~Submission() {
+    assignmentPtr = nullptr;
     delete assignmentPtr;
 }
 

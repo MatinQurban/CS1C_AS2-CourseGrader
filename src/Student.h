@@ -27,12 +27,12 @@ public:
     void printGrades();
     char getLetterGrade();
     string getName();
+    int totalPointsPossible;
 
 private:
     string name;
     int studentID;
     vector<Submission> studentSubmissions;
-    int totalPointsPossible;
     int totalPointsEarned;
 };
 

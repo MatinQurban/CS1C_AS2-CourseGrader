@@ -26,18 +26,18 @@ public:
     Course();
     Course(string instructor, string CourseTitle, string CourseDescription);
 
-    void addStudent(Student student);
-    void addAssignment(Assignment assignment);
+    void addStudent(Student* student);
+    void addAssignment(Assignment* assignment);
 
     void printRoster();
     void printAssignments();
+    vector<Student*> students;
 
 private:
     string instructor;
     string CourseTitle;
     string CourseDescription;
-    vector<Student> students;
-    vector<Assignment> assignments;
+    vector<Assignment*> assignments;
 
 };
 
