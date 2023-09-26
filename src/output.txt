@@ -1,0 +1,30 @@
+Course Title: Intro to C++
+Course Instructor: Homi Bodhanwala
+Course Description: Learn C++
+Student Roster: 
+Student Name: Kiwon Lee
+Student ID: 12345
+Total Points Earned: 192
+Total Points Possible: 400
+Letter Grade: F
+Student Name: Matin Qurbanzadeh
+Student ID: 67890
+Total Points Earned: 400
+Total Points Possible: 400
+Letter Grade: A
+Student Name: Luke Juedes
+Student ID: 13579
+Total Points Earned: 335
+Total Points Possible: 400
+Letter Grade: B
+
+Assignments: 
+Assignment Name: Assignment 1
+Assignment Description: Recipe book
+Total Points Possible: 100
+Assignment Name: Assignment 2
+Assignment Description: Perfect shuffle
+Total Points Possible: 150
+Assignment Name: Assignment 3
+Assignment Description: Course Grader
+Total Points Possible: 150
