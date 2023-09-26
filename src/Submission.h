@@ -9,6 +9,7 @@ class Submission {
 public:
     Submission();
     Submission(Assignment assignment, int pointsEarned);
+    ~Submission();
 
     int getPointsEarned();
 

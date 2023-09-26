@@ -12,6 +12,10 @@ Submission::Submission(Assignment assignment, int pointsEarned) {
     this->pointsEarned = pointsEarned;
 }
 
+Submission::~Submission() {
+    delete assignmentPtr;
+}
+
 int Submission::getPointsEarned() {
     return pointsEarned;
 }
