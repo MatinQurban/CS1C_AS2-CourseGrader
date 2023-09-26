@@ -31,3 +31,8 @@ void Submission::setAssignment(Assignment assignment) {
 void Submission::setPointsEarned(int pointsEarned) {
     this->pointsEarned = pointsEarned;
 }
+
+void Submission::printSubmission() {
+    cout << "Assignment Name: " << assignmentPtr->getName() << endl;
+    cout << "          Score: " << pointsEarned << " / " << assignmentPtr->getTotalPointsPossible() << endl;
+}

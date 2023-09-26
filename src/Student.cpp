@@ -34,8 +34,9 @@ void Student::printGrades() {
     cout << "Student Name: " << name << endl;
     cout << "Student ID: " << studentID << endl;
     cout << "Grades: \n";
-    for (int i = 0; i < assignmentGrades.size(); i++) {
-        cout << "Assignment " << i+1 << ": " << assignmentGrades[i] << "\n";
+    for (int i = 0; i < studentSubmissions.size(); i++) {
+        cout << " ";
+        studentSubmissions[i].printSubmission();
     }
     cout << endl;
 }

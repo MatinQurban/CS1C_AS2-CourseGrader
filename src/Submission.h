@@ -17,6 +17,8 @@ public:
     void setAssignment(Assignment assignment);
     void setPointsEarned(int pointsEarned);
 
+    void printSubmission();
+
 private:
     Assignment *assignmentPtr;
     int pointsEarned;

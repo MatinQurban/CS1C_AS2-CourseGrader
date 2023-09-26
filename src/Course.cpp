@@ -28,18 +28,16 @@ void Course::printRoster() {
     cout << "Course Description: " << CourseDescription << endl;
     cout << "Student Roster: \n";
     for (int i = 0; i < students.size(); i++) {
-        cout << "Student " << i+1 << ": " << students[i].getName() << endl;
+        cout << " ";
+        students[i].printDetails();
     }
     cout << endl;
 }
 
 void Course::printAssignments() {
-    cout << "Course Title: " << CourseTitle << endl;
-    cout << "Course Instructor: " << instructor << endl;
-    cout << "Course Description: " << CourseDescription << endl;
     cout << "Assignments: \n";
     for (int i = 0; i < assignments.size(); i++) {
-        cout << "Assignment " << i+1 << ": " << assignments[i].getName() << endl;
+        assignments[i].print();
     }
     cout << endl;
 }
